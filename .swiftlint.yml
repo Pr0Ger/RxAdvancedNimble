@@ -1,0 +1,6 @@
+included:
+  - Sources
+  - Tests
+excluded:
+  - Carthage
+line_length: 120
