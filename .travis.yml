@@ -15,3 +15,7 @@ matrix:
     - install: travis_retry carthage bootstrap --use-submodules --no-use-binaries --platform tvOS
       script: scan --scheme RxAdvancedNimble-tvOS
       env: JOB=tvOS
+notifications:
+  email: false
+  slack:
+    secure: qcN4hABomxoIEhSQ3LXhkLhndOQ0aG2ROuFWlFa/O8pUKwztYypo3y0kF2n8V4fG/mLPxjWXdguWhFzK1UsTXv/bIT7H0jovXjo4umMF7oQUlVLAyjPQZrV8DDVh0wiPDMFGs7E3yHEmha7qBx7hYmPjwu/47MYEE+pCL3qqy6ETK+Kz8PiV4pJ8GWxqZdocWQInwqpWRjySZJfCxWnZStYuQB+mpGtExv79vq6u42uYO9LIf6F4Q9TDdn0bz70GBj3+cQhtA3uyisvXa2OHACL9uoJ8T5Wy4q4uIpUb2oH/m6Pofq1rArC81AAArz85+5OlyutTrYe8Li5HcOMKsXtlvAS1SB1t+4/zOz/Pffy1IcyIv2LwsR8TjkWLOLjaz5Db2Esfl3/EBhebzuCxIrJu16fEYIGpf8NBBlfs0tNHG/7b6HJ3jN09v1diqGb6VktxGAFhyLYVerYaJ2UCrBZ2N+ihHNcfz7a0wualV0XwO3OuLM4h9UAA2CbHJD7s2uS5W+MR6X8DkKfoQ+bcEnxsc1FQqknTrVYa1EKRG5mZdyDDOFMlAiDxnIYGZ8LoIFkVXsbxaVPpkEXp9FLP2rN7uAzbv8EOQKSm0wni2GOgaNRJ7+XyQavK36l9E1MJAWfKqdSVd09rvtCMusL9906Fjb8mO0r6Gfq2YB9QXOo=
