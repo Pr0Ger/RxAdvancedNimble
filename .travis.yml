@@ -6,12 +6,12 @@ language: objective-c
 osx_image: xcode7.3
 matrix:
   include:
-    - install: carthage bootstrap --use-submodules --no-use-binaries --platform iOS
+    - install: travis_retry carthage bootstrap --use-submodules --no-use-binaries --platform iOS
       script: scan --scheme RxAdvancedNimble-iOS
       env: JOB=iOS
-    - install: carthage bootstrap --use-submodules --no-use-binaries --platform mac
+    - install: travis_retry carthage bootstrap --use-submodules --no-use-binaries --platform mac
       script: scan --scheme RxAdvancedNimble-macOS
       env: JOB=macOS
-    - install: carthage bootstrap --use-submodules --no-use-binaries --platform tvOS
+    - install: travis_retry carthage bootstrap --use-submodules --no-use-binaries --platform tvOS
       script: scan --scheme RxAdvancedNimble-tvOS
       env: JOB=tvOS
