@@ -1,0 +1,8 @@
+before_install:
+  - gem install scan
+language: objective-c
+osx_image: xcode7.3
+matrix:
+  include:
+    - install: carthage bootstrap --use-submodules --no-use-binaries --platform osx
+      script: scan --scheme RxAdvancedNimble-macOS
