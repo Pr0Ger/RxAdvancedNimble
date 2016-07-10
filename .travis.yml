@@ -1,3 +1,5 @@
+git:
+  submodules: false
 before_install:
   - gem install scan
 language: objective-c
