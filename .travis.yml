@@ -1,6 +1,8 @@
 git:
   submodules: false
 before_install:
+  - brew update
+  - brew outdated carthage || brew upgrade carthage
   - gem install scan
 language: objective-c
 osx_image: xcode7.3
