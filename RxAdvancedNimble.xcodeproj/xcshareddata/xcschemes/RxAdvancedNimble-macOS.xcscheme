@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "24E983D81D2EF0AF001137CE"
                BuildableName = "RxAdvancedNimble.framework"
-               BlueprintName = "RxAdvancedNimble"
+               BlueprintName = "RxAdvancedNimble-macOS"
                ReferencedContainer = "container:RxAdvancedNimble.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "24E983E21D2EF0B0001137CE"
-               BuildableName = "RxAdvancedNimbleTests.xctest"
-               BlueprintName = "RxAdvancedNimbleTests"
+               BuildableName = "RxAdvancedNimbleTests-macOS.xctest"
+               BlueprintName = "RxAdvancedNimbleTests-macOS"
                ReferencedContainer = "container:RxAdvancedNimble.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -44,7 +44,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "24E983D81D2EF0AF001137CE"
             BuildableName = "RxAdvancedNimble.framework"
-            BlueprintName = "RxAdvancedNimble"
+            BlueprintName = "RxAdvancedNimble-macOS"
             ReferencedContainer = "container:RxAdvancedNimble.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -66,7 +66,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "24E983D81D2EF0AF001137CE"
             BuildableName = "RxAdvancedNimble.framework"
-            BlueprintName = "RxAdvancedNimble"
+            BlueprintName = "RxAdvancedNimble-macOS"
             ReferencedContainer = "container:RxAdvancedNimble.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -84,7 +84,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "24E983D81D2EF0AF001137CE"
             BuildableName = "RxAdvancedNimble.framework"
-            BlueprintName = "RxAdvancedNimble"
+            BlueprintName = "RxAdvancedNimble-macOS"
             ReferencedContainer = "container:RxAdvancedNimble.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

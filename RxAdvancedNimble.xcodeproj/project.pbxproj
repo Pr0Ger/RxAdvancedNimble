@@ -54,7 +54,7 @@
 		24E983D91D2EF0AF001137CE /* RxAdvancedNimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxAdvancedNimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E983DC1D2EF0B0001137CE /* RxAdvancedNimble.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxAdvancedNimble.h; sourceTree = "<group>"; };
 		24E983DE1D2EF0B0001137CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		24E983E31D2EF0B0001137CE /* RxAdvancedNimbleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxAdvancedNimbleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24E983E31D2EF0B0001137CE /* RxAdvancedNimbleTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RxAdvancedNimbleTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E983E81D2EF0B0001137CE /* RxAdvancedNimbleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxAdvancedNimbleTests.swift; sourceTree = "<group>"; };
 		24E983EA1D2EF0B0001137CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,7 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				24E983D91D2EF0AF001137CE /* RxAdvancedNimble.framework */,
-				24E983E31D2EF0B0001137CE /* RxAdvancedNimbleTests.xctest */,
+				24E983E31D2EF0B0001137CE /* RxAdvancedNimbleTests-macOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,9 +144,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		24E983D81D2EF0AF001137CE /* RxAdvancedNimble */ = {
+		24E983D81D2EF0AF001137CE /* RxAdvancedNimble-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 24E983ED1D2EF0B0001137CE /* Build configuration list for PBXNativeTarget "RxAdvancedNimble" */;
+			buildConfigurationList = 24E983ED1D2EF0B0001137CE /* Build configuration list for PBXNativeTarget "RxAdvancedNimble-macOS" */;
 			buildPhases = (
 				24E983D41D2EF0AF001137CE /* Sources */,
 				24E983D51D2EF0AF001137CE /* Frameworks */,
@@ -157,14 +157,14 @@
 			);
 			dependencies = (
 			);
-			name = RxAdvancedNimble;
+			name = "RxAdvancedNimble-macOS";
 			productName = RxAdvancedNimble;
 			productReference = 24E983D91D2EF0AF001137CE /* RxAdvancedNimble.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		24E983E21D2EF0B0001137CE /* RxAdvancedNimbleTests */ = {
+		24E983E21D2EF0B0001137CE /* RxAdvancedNimbleTests-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 24E983F01D2EF0B0001137CE /* Build configuration list for PBXNativeTarget "RxAdvancedNimbleTests" */;
+			buildConfigurationList = 24E983F01D2EF0B0001137CE /* Build configuration list for PBXNativeTarget "RxAdvancedNimbleTests-macOS" */;
 			buildPhases = (
 				24E983DF1D2EF0B0001137CE /* Sources */,
 				24E983E01D2EF0B0001137CE /* Frameworks */,
@@ -176,9 +176,9 @@
 			dependencies = (
 				24E983E61D2EF0B0001137CE /* PBXTargetDependency */,
 			);
-			name = RxAdvancedNimbleTests;
+			name = "RxAdvancedNimbleTests-macOS";
 			productName = RxAdvancedNimbleTests;
-			productReference = 24E983E31D2EF0B0001137CE /* RxAdvancedNimbleTests.xctest */;
+			productReference = 24E983E31D2EF0B0001137CE /* RxAdvancedNimbleTests-macOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -210,8 +210,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				24E983D81D2EF0AF001137CE /* RxAdvancedNimble */,
-				24E983E21D2EF0B0001137CE /* RxAdvancedNimbleTests */,
+				24E983D81D2EF0AF001137CE /* RxAdvancedNimble-macOS */,
+				24E983E21D2EF0B0001137CE /* RxAdvancedNimbleTests-macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -255,7 +255,7 @@
 /* Begin PBXTargetDependency section */
 		24E983E61D2EF0B0001137CE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 24E983D81D2EF0AF001137CE /* RxAdvancedNimble */;
+			target = 24E983D81D2EF0AF001137CE /* RxAdvancedNimble-macOS */;
 			targetProxy = 24E983E51D2EF0B0001137CE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -299,9 +299,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = RxAdvancedNimble;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -341,8 +342,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RxAdvancedNimble;
 				SDKROOT = macosx;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -367,7 +369,6 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.pr0ger.RxAdvancedNimble;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -391,7 +392,6 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.pr0ger.RxAdvancedNimble;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -438,7 +438,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		24E983ED1D2EF0B0001137CE /* Build configuration list for PBXNativeTarget "RxAdvancedNimble" */ = {
+		24E983ED1D2EF0B0001137CE /* Build configuration list for PBXNativeTarget "RxAdvancedNimble-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				24E983EE1D2EF0B0001137CE /* Debug */,
@@ -447,7 +447,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		24E983F01D2EF0B0001137CE /* Build configuration list for PBXNativeTarget "RxAdvancedNimbleTests" */ = {
+		24E983F01D2EF0B0001137CE /* Build configuration list for PBXNativeTarget "RxAdvancedNimbleTests-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				24E983F11D2EF0B0001137CE /* Debug */,
