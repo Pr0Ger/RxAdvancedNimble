@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "RxAdvancedNimble"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "Nimble extensions that make unit testing with RxSwift easier"
 
   s.description  = <<-DESC
